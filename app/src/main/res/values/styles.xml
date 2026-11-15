@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TabText">
+        <item name="android:background">@drawable/tab_bg</item>
+        <item name="android:textColor">@color/tab_text</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@drawable/bg_card</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+</resources>

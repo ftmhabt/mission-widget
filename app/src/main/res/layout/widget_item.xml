@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Diamond marker: gold = main, blue = side, green = daily, purple = event -->
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="serif"
+                android:maxLines="1"
+                android:textColor="@color/ink"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="serif"
+                android:maxLines="1"
+                android:textColor="@color/done_grey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/obj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/ink_muted"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/obj_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/done"
+                android:textColor="@color/gold_dark"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:indeterminate="false"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progressDrawable="@drawable/bar_progress" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/prog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/ink_muted"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="×"
+            android:textColor="@color/ink_muted"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+</LinearLayout>

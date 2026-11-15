@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="22dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:letterSpacing="0.1"
+        android:text="@string/new_mission"
+        android:textColor="@color/ink"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gold" />
+
+    <!-- Type chips (same look as the widget tabs) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chip_main"
+            style="@style/TabText"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/tab_main" />
+
+        <TextView
+            android:id="@+id/chip_side"
+            style="@style/TabText"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/tab_side" />
+
+        <TextView
+            android:id="@+id/chip_daily"
+            style="@style/TabText"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/tab_daily" />
+
+        <TextView
+            android:id="@+id/chip_event"
+            style="@style/TabText"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/tab_event" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/in_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/gold_dark"
+        android:hint="@string/hint_title"
+        android:inputType="textCapSentences"
+        android:textColor="@color/ink"
+        android:textColorHint="@color/ink_muted"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/in_obj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/gold_dark"
+        android:hint="@string/hint_obj"
+        android:inputType="textCapSentences"
+        android:textColor="@color/ink"
+        android:textColorHint="@color/ink_muted"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/steps_label"
+            android:textColor="@color/ink_muted"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/in_steps"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gold_dark"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="1"
+            android:textColor="@color/ink"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/cancel"
+            android:textColor="@color/ink_muted"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="serif"
+            android:paddingStart="18dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="10dp"
+            android:text="@string/accept"
+            android:textColor="@color/on_gold"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

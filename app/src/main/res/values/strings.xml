@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Missions</string>
+    <string name="header">MISSIONS</string>
+    <string name="widget_desc">Main, side, daily and event missions</string>
+    <string name="tab_main">Main</string>
+    <string name="tab_side">Side</string>
+    <string name="tab_daily">Daily</string>
+    <string name="tab_event">Events</string>
+    <string name="empty">No missions here yet</string>
+    <string name="done">Mission Complete</string>
+    <string name="new_mission">New Mission</string>
+    <string name="hint_title">Mission title</string>
+    <string name="hint_obj">Objective (optional)</string>
+    <string name="steps_label">Steps to complete</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept Mission</string>
+</resources>
